@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div
+        class="sidebar bg-white p-20 w-250 h-100vh p-sticky top-0 bs-5-ccc d-flex fd-c"
+      >
+        <i
+          class="fa-solid fa-circle-chevron-right p-absolute c-grey fs-18 cursor-pointer hide-mobile right-m9 top-30 z-1000 toggle-sidebar"
+        ></i>
+        <div class="side-head d-flex align-center">
+          <span
+            class="logo bg-lightBlue c-white w-32 h-32 txt-c float-left fs-14 fw-bold rad-8 lh-32 mr-7"
+            >MA</span
+          >
+          <div class="info hide-mobile">
+            <span class="d-block fs-14">Mohamed Alfeky</span>
+            <span class="d-block fs-12 c-grey">Front-End Developer</span>
+          </div>
+        </div>
+        <ul class="top flex-1">
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="index.html"
+            >
+              <i class="fa-solid fa-square-poll-vertical fa-fw"></i>
+              <span class="fs-14 ml-10">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="fs-14 ml-10">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="profile.html"
+            >
+              <i class="fa-solid fa-user fa-fw"></i>
+              <span class="fs-14 ml-10">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="fs-14 ml-10">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="fs-14 ml-10">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="friends.html"
+            >
+              <i class="fa-solid fa-user-plus fa-fw"></i>
+              <span class="fs-14 ml-10">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="files.html"
+            >
+              <i class="fa-solid fa-file fa-fw"></i>
+              <span class="fs-14 ml-10">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="plans.html"
+            >
+              <i class="fa-solid fa-credit-card fa-fw"></i>
+              <span class="fs-14 ml-10">Plans</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="bottom m-0">
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="signin.html"
+            >
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span class="fs-14 ml-10">Logout</span>
+            </a>
+          </li>
+          <li
+            class="theme active d-flex align-center space-between fs-14 c-black rad-6 p-10 cursor-pointer"
+          >
+            <span class="select-none theme-state hide-mobile">light</span>
+            <div
+              class="toggle-mode bg-ccc w-60 h-26 rad-16 p-relative td-0_4 cursor-pointer"
+            ></div>
+            <span class="select-none theme-state hide-mobile">Dark</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full overflow-hidden">
+        <!-- Start Head -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input
+              class="p-10 border-ccc rad-10 pl-30 w-160"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute fw-900 top-half left-10 fs-14"
+            ></i>
+          </div>
+          <div class="icons d-flex align-center">
+            <div class="notification p-relative cursor-pointer">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </div>
+            <img
+              src="imgs/avatar.png"
+              alt="avatar"
+              class="cursor-pointer w-32 h-32 ml-15"
+            />
+          </div>
+        </div>
+        <!-- End Head -->
+        <!-- to Here -->
+        <h1 class="p-relative mb-40 ml-15">Friends</h1>
+        <div class="friends-page d-grid m-20 gap-20">
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                src="imgs/friend-01.jpg"
+                alt=""
+                class="rad-half mt-10 mb-10 w-100 h-100"
+              />
+              <h4 class="m-0">Ahmed Nasser</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>99 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>15 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>25 Articles</span>
+              </div>
+              <span
+                class="vip fw-bold c-orange p-absolute right-0 top-half fs-40 opacity-0_2"
+                >VIP</span
+              >
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 02/10/2021</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="#">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-03.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Omar Ahmed</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Mobile Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>80 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>20 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>18 Articles</span>
+              </div>
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 02/06/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-04.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Shady Nabil</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Back-End Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>70 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>30 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>18 Articles</span>
+              </div>
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 28/06/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-05.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Mohamed Ibrahim</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Algorithm Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>80 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>30 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>18 Articles</span>
+              </div>
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 28/08/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-04.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Amr Hendawy</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Back-End Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>70 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>30 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>18 Articles</span>
+              </div>
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 28/06/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-02.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Mahmoud Adel</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Cloud Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>30 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>11 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>12 Articles</span>
+              </div>
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 02/08/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-05.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Ahmed Abuzaid</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Content Creator</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>80 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>30 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>18 Articles</span>
+              </div>
+              <span
+                class="vip fw-bold c-orange p-absolute right-0 top-half fs-40 opacity-0_2"
+                >Vip</span
+              >
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 28/08/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-01.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Gareeb Elshiekh</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">JavaScript Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>90 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>15 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>25 Articles</span>
+              </div>
+              <span
+                class="vip fw-bold c-orange p-absolute right-0 top-half fs-40 opacity-0_2"
+                >Vip</span
+              >
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 02/10/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="friend bg-white rad-6 p-20 p-relative">
+            <div class="contact p-absolute left-10 top-10">
+              <i
+                class="fa-solid fa-phone bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+              <i
+                class="fa-regular fa-envelope bg-eee p-10 rad-half fs-13 cursor-pointer td-0_3 c-666"
+              ></i>
+            </div>
+            <div class="txt-c">
+              <img
+                class="rad-half mt-10 mb-10 w-100 h-100"
+                src="imgs/friend-03.jpg"
+                alt=""
+              />
+              <h4 class="m-0">Hamza</h4>
+              <p class="c-grey fs-13 mt-5 mb-0">Front-End Developer</p>
+            </div>
+            <div
+              class="icons fs-14 p-relative bt-eee bb-eee mt-15 mb-15 pt-15 pb-15"
+            >
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile fa-fw mr-5"></i>
+                <span>80 Friends</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit fa-fw mr-5"></i>
+                <span>20 Projects</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-newspaper fa-fw mr-5"></i>
+                <span>18 Articles</span>
+              </div>
+            </div>
+            <div class="info between-flex fs-13">
+              <span class="c-grey">Joined 02/06/2020</span>
+              <div>
+                <a class="bg-blue c-white btn-shape" href="profile.html"
+                  >Profile</a
+                >
+                <a class="bg-red c-white btn-shape remove" href="">Remove</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --bg-color: white;
+  --text-color: black;
+}
+body[data-theme="dark"] {
+  --text-color: #cccccc;
+  --bg-color: #121315;
+  --midnight-blue: #1a1a1e;
+  --slate-grey: #262a2e85;
+  --light-gray: #cccccc;
+  --border-color: #3c4043;
+}
+body[data-theme="dark"] * {
+  border-color: #3c4043 !important;
+}
+body[data-theme="dark"] *:disabled {
+  cursor: no-drop;
+  background-color: var(--slate-grey);
+  color: #bbb;
+}
+body[data-theme="dark"] .sidebar,
+body[data-theme="dark"] .head,
+body[data-theme="dark"] .content {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+/* Start Head */
+body[data-theme="dark"] .head {
+  border-bottom: 1px solid #3c4043;
+}
+/* End Head */
+
+/* Start Sidebar */
+body[data-theme="dark"] .sidebar {
+  border-right: 1px solid #3c4043;
+}
+body[data-theme="dark"] .sidebar > h3::before {
+  background-color: var(--light-gray);
+}
+body[data-theme="dark"] .sidebar > h3::after {
+  border-color: var(--border-color);
+  background-color: var(--midnight-blue);
+}
+body[data-theme="dark"] .sidebar i {
+  color: var(--text-color);
+}
+body[data-theme="dark"] .sidebar li a.active,
+body[data-theme="dark"] .sidebar li a:hover,
+body[data-theme="dark"] .sidebar .theme.active {
+  background-color: var(--slate-grey);
+  color: var(--text-color);
+}
+/* End Sidebar */
+
+/* Start Global Elements Styles */
+body[data-theme="dark"] input,
+body[data-theme="dark"] textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+body[data-theme="dark"] span:not(.c-grey),
+body[data-theme="dark"] p:not(.c-grey) {
+  color: var(--text-color);
+}
+body[data-theme="dark"] .content h1::before {
+  background-color: var(--slate-grey);
+}
+body[data-theme="dark"] .content h1::after {
+  background-color: var(--light-gray);
+}
+/* End Global Elements Styles */
+
+/* Start Class Styles */
+body[data-theme="dark"] .bs-5-ddd,
+body[data-theme="dark"] .bs-5-ccc,
+body[data-theme="dark"] .bs-10-ccc {
+  box-shadow: none;
+}
+body[data-theme="dark"] .bg-white {
+  background-color: var(--midnight-blue);
+}
+body[data-theme="dark"] .btn-shape {
+  background-color: var(--blue-alt-color);
+  color: var(--text-color);
+}
+body[data-theme="dark"] .bg-eee:not(input, textarea) {
+  background-color: var(--slate-grey);
+}
+/* End Class Styles */
+
+/* Start dashboard */
+body[data-theme="dark"] .projects thead td {
+  background-color: var(--slate-grey);
+}
+body[data-theme="dark"] .projects table tbody tr:hover td {
+  background-color: var(--slate-grey);
+}
+body[data-theme="dark"] .tasks .trash-icon:hover {
+  background-color: var(--slate-grey);
+}
+/* End dashboard */
+/* Start Settings */
+body[data-theme="dark"] .settings-page .social-boxes input {
+  background-color: var(--bg-color);
+}
+body[data-theme="dark"] .settings-page .social-boxes i {
+  background-color: var(--bg-color);
+  color: var(--light-gray);
+}
+/* End Settings */
+/* Start Profile Page */
+body[data-theme="dark"] .profile-page .info-box .box:hover {
+  background-color: var(--slate-grey);
+}
+/* End Profile Page */
+/* Start Friends Page*/
+body[data-theme="dark"] .friends-page .remove {
+  background-color: #a52a2a;
+}
+/* End Friends Page*/
